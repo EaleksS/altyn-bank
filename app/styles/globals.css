@@ -4,11 +4,16 @@
 
 body {
 	background: #fff;
-	padding: 20px 0 20px 0;
+
+	@media (min-width: 768px) {
+		padding: 20px 0 20px 0;
+	}
 }
 
 .min-h-fulldvh {
-	min-height: calc(100dvh - 2.5rem);
+	@media (min-width: 768px) {
+		min-height: calc(100dvh - 2.5rem);
+	}
 }
 
 .glow3 {
@@ -57,10 +62,18 @@ body {
 	left: 0;
 	background: linear-gradient(to bottom, rgb(252, 230, 179), #f6f6f6);
 	box-shadow: 0 -10px 30px rgba(245, 245, 255, 0.8);
-	border-radius: 20px;
+
 	/* другие стили, как ширина, высота и т.д. */
 	height: 400px;
 	z-index: 0;
+
+	border-radius: 20px;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+
+	@media (min-width: 768px) {
+		border-radius: 20px;
+	}
 }
 
 .swiper {
