@@ -2,6 +2,8 @@ import { Header } from '@/components/header'
 import { InfoCard } from '@/components/info-card'
 import { Button } from '@heroui/button'
 import { Input, Textarea } from '@heroui/input'
+import { ChevronLeft, HomeIcon } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Home() {
 	return (
@@ -11,6 +13,15 @@ export default function Home() {
 				<div className='glow2 backdrop-blur-lg blur-lg'></div>
 				<div className='glow'></div>
 				<Header />
+				<div className='flex items-center justify-between mt-5 relative z-10 px-2 sm:px-4'>
+					<Link href='/'>
+						<ChevronLeft className=' cursor-pointer ' />
+					</Link>
+					<p>Перевод по номеру телефона</p>
+					<Link href='/'>
+						<HomeIcon className=' cursor-pointer ' />
+					</Link>
+				</div>
 				<h2 className='mt-5 relative z-10 px-3 sm:px-5 text-xl font-semibold'>
 					Счет списание
 				</h2>

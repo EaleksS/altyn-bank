@@ -16,7 +16,7 @@ export const InfoCard: React.FC<Props> = ({ className }) => {
 				)}
 			>
 				<div>
-					<h1 className='text-2xl'>1 600 468.98 P</h1>
+					<h1 className='text-2xl font-medium'>1 600 468.98 P</h1>
 					<p className='text-sm '>Счёт •• 3467</p>
 				</div>
 				<div className='bg-[#E2EAF0] h-10 w-14 rounded-md py-0.5 px-1'>
