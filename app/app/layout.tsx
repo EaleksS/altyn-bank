@@ -27,10 +27,9 @@ export async function generateViewport(): Promise<Viewport> {
 				width: 'device-width',
 				initialScale: 1,
 				maximumScale: 1, // disables auto-zoom on ios safari
-		  }
+			}
 		: {}
 }
-
 
 export default function RootLayout({
 	children,
