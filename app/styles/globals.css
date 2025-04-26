@@ -76,6 +76,27 @@ body {
 	}
 }
 
+.glow4 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	background: linear-gradient(to bottom, rgb(252, 230, 179), #fff);
+	box-shadow: 0 -10px 30px rgba(245, 245, 255, 0.8);
+
+	/* другие стили, как ширина, высота и т.д. */
+	height: 400px;
+	z-index: 0;
+
+	border-radius: 20px;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+
+	@media (min-width: 768px) {
+		border-radius: 20px;
+	}
+}
+
 .swiper {
 	width: 100%;
 
