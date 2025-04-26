@@ -11,15 +11,19 @@ import { useRouter } from 'next/navigation'
 import React from 'react'
 
 export default function AuthPin() {
+	const router = useRouter()
 	const [token] = React.useState(
 		typeof window !== 'undefined' ? localStorage.getItem('token') : ''
 	)
 
+	React.useEffect(() => {
+		if (!!token) {
+			router.push('/auth')
+		}
+	}, [])
 	const [isPin, setIsPin] = React.useState(
 		typeof window !== 'undefined' && Boolean(localStorage.getItem('isSetPin'))
 	)
-
-	const router = useRouter()
 
 	const SetPin = React.useMemo(() => {
 		const onSubmit = async (pin: string) => {
