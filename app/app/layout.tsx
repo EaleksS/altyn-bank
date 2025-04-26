@@ -26,7 +26,12 @@ export default function RootLayout({
 	return (
 		<html suppressHydrationWarning lang='ru'>
 			<head />
-			<body className={clsx('font-sans antialiased', fontSans.variable)}>
+			<body
+				className={clsx(
+					'font-sans antialiased !overflow-x-hidden',
+					fontSans.variable
+				)}
+			>
 				<Providers>{children}</Providers>
 			</body>
 		</html>
